@@ -32,3 +32,23 @@ Cada linha representa um website (legítimo ou phishing), e a variável Result �
 
 1 ➡ phishing ❌
 -1 ➡ legítimo ✅
+
+# 3. Modelagem e treinamento dos modelos
+Após separar o conjunto de dados entre treino e teste, é possível fazer o treinamento de diferentes modelos clássicos de Machine Learning para comparar seus desempenhos no problema de classificação (phishing vs legítimo).
+
+Foram utilizados os modelos:
+
+* Regressão Logística: modelo linear que estima probabilidades e é eficiente em dados balanceados.
+* Support Vector Machine (SVM): modelo que busca o hiperplano ótimo de separação entre classes, sensível à escala.
+* Random Forest: conjunto de árvores de decisão que combina resultados de múltiplos classificadores, geralmente apresentando boa robustez e interpretabilidade.
+
+Todos os modelos foram avaliados utilizando as mesmas métricas:
+
+* Acurácia (Accuracy): proporção de previsões corretas.
+* Matriz de confusão: visualiza erros e acertos entre as classes.
+* Relatório de classificação (Precision, Recall, F1-Score): importante para medir desempenho equilibrado entre as classes.
+
+Após o treino básico, o melhor modelo foi o Random Forest, que foi otimizado por meio de ajuste de hiperparâmetros, com validação cruzada.
+
+<img width="584" height="436" alt="transferir" src="https://github.com/user-attachments/assets/e7daa2e1-8753-4bfc-883e-8bed10ab0071" />
+
